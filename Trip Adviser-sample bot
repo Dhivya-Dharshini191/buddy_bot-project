@@ -2,9 +2,8 @@
 import streamlit as st
 from openai import OpenAI
 
-class Page1:
+class Page:
     def __init__(self):
-        # Initialize the OpenAI client using the API key from secrets.
         from secret_keys import openai_api_key
         self.client = OpenAI(api_key=openai_api_key)
 
